@@ -8,44 +8,16 @@
     margin: 0;
     font-family: '72', '72full', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: #f7f7f7;
+    background-color: #F5F6F7;
     min-height: 100vh;
   }
 }
 
 @layer utilities {
   .fiori-shadow {
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.16);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.12);
   }
   .fiori-shadow-lg {
-    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10);
   }
-  .stat-bar-fill {
-    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .card-enter {
-    animation: cardEnter 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-  .choice-hover {
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .pulse-warn {
-    animation: pulseWarn 1.5s ease-in-out infinite;
-  }
-}
-
-@keyframes cardEnter {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pulseWarn {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.6; }
 }
